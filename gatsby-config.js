@@ -1,3 +1,9 @@
+const dotenv= require('dotenv');
+if(process.env.NODE_ENV!=="production"){
+  dotenv.config();
+}
+
+
 module.exports = {
   siteMetadata: {
     title: "m6o.io - Monilito Castro",
@@ -12,6 +18,15 @@ module.exports = {
         name: `blog`,
         path: `${__dirname}/src/blog/`,
       },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `${process.env.CONTENTFUL_SPACE_ID}`,
+        accessToken: `${process.env.CONTENTFUL_API_KEY}`,
+        name: `contentful`,
+        path: `${__dirname}/src/contentful/`,
+      }
     },
     "gatsby-plugin-mdx",
   ],

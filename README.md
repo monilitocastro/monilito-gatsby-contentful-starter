@@ -4,34 +4,46 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Gatsby-Contentful minimal starter
 </h1>
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Create a Gatsby website powered by Contentful CMS.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
-
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    ```
+    git clone https://github.com/monilitocastro/monilito-gatsby-contentful-starter my-contentful-blog
+    cd my-contentful-blog
+    code .
     ```
 
-2.  **Start developing.**
+    This will allow you to edit your code in `Visual Studio Code`.
+    
+2.  **To develop**
 
-    Navigate into your new site’s directory and start it up.
+    In the terminal enter
 
     ```shell
-    cd my-gatsby-site/
-    npm run develop
+    npm install
     ```
 
-3.  **Open the code and start customizing!**
+    Create a `.env` file on the project root.
 
-    Your site is now running at http://localhost:8000!
+    Go get your api keys from your Contentful account, and set them correspondingly in the `.env` file.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+    ```
+    CONTENTFUL_API_KEY=
+    CONTENTFUL_PREVIEW_KEY=
+    CONTENTFUL_SPACE_ID=
+    ```
+
+    To run:
+
+    ```shell
+    gatsby develop
+    ```
+
+    And navigate to `http://localhost:8000/` to see your initial starting point for you new creation.
 
 4.  **Learn more**
 
@@ -51,4 +63,4 @@
 
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/monilitocastro/monilito-gatsby-contentful-starter)
