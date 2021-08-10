@@ -10,25 +10,6 @@ import {
 import Layout from "../../components/layout"
 
 const BlogPage = ({ pageTitle, children }) => {
-//   const data_OLD = useStaticQuery(graphql`
-//   query {
-//     mdx {
-//       id
-//     }
-//     allMdx(sort: {order: DESC, fields: frontmatter___date}) {
-//       edges {
-//         node {
-//           frontmatter {
-//             title
-//             date
-//           }
-//           id,
-//           slug
-//         }
-//       }
-//     }
-//   }
-// `)
 const data = useStaticQuery(graphql`
 query MyAllContentfulBlogPostQuery {
   allContentfulBlogPost {

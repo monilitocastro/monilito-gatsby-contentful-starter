@@ -24,6 +24,7 @@ module.exports = {
       options: {
         spaceId: `${process.env.CONTENTFUL_SPACE_ID}`,
         accessToken: `${process.env.CONTENTFUL_API_KEY}`,
+        useNameForId: true,
         name: `contentful`,
         path: `${__dirname}/src/contentful/`,
       }
