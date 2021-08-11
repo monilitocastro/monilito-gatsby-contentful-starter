@@ -19,6 +19,7 @@
     "@contentful/rich-text-types": "^15.1.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@tkz/gatsby-source-contentful": "^2.0.72",
     "dotenv": "^10.0.0",
     "gatsby": "^3.11.0",
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
