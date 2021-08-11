@@ -36,7 +36,7 @@ query MyAllContentfulBlogPostQuery {
         {
               data.allContentfulBlogPost.edges.map(({node})=>(
                   <article key={node.id}>
-                      <Link to={node.slug}>{node.title}</Link>
+                      <Link to={`/contentfulblog/${node.slug}`}>{node.title}</Link>
                       <p>Posted on {node.date}</p>
                   </article>
               ))
